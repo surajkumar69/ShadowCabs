@@ -720,6 +720,13 @@ a {
 
     .hero-buttons {
         flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
     }
     
     .cars-grid {
@@ -729,10 +736,94 @@ a {
     .section {
         padding: 60px 0;
     }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
+    /* Header Fixes */
+    .logo {
+        font-size: 1.1rem;
+        gap: 8px;
+    }
+    .logo img {
+        height: 35px;
+    }
+    .header-container {
+        flex-wrap: nowrap;
+    }
+    
+    /* Typography Fixes */
     .hero h1 {
         font-size: 2rem;
+    }
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        margin-bottom: 30px;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    
+    /* Contact Section Fixes */
+    .contact-container {
+        padding: 25px 20px;
+        gap: 30px;
+        width: 100%;
+    }
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .contact-item .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .contact-item p {
+        font-size: 1rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+        width: 100%;
+    }
+    
+    /* Button Fixes */
+    .contact-actions {
+        width: 100%;
+        gap: 15px;
+    }
+    .contact-btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+    .btn-large {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    /* Feature & Service Cards */
+    .feature-card, .service-card, .car-details, .booking-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo {
+        font-size: 1rem;
+    }
+    .logo img {
+        height: 30px;
+    }
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .contact-container {
+        padding: 20px 15px;
     }
 }
