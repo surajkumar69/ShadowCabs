@@ -164,6 +164,15 @@ a {
 .logo {
     display: flex;
     align-items: center;
+    gap: 12px;
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.logo span {
+    letter-spacing: 1px;
 }
 
 .logo img {

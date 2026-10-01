@@ -6,6 +6,7 @@ export default function Home() {
         <div className="container header-container">
             <a href="#" className="logo">
                 <img src="assets/images/logo.jpg" alt="Shadow Cabs Logo" />
+                <span>SHADOW CABS</span>
             </a>
             <nav className="navbar">
                 <ul className="nav-links">
